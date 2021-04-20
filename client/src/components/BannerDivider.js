@@ -18,7 +18,7 @@ const Divider = styled.div`
 const DividerImage = styled.img`
   width: 100%;
   position: absolute;
-  bottom: -1;
+  bottom: -1px;
   left: 0;
 `;
 
