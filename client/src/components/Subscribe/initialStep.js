@@ -5,14 +5,13 @@ const InitialStepForm = ({
   values,
   handleInputChange,
   handleFormSubmit,
-  nextStep,
+  nextStep
 }) => {
   const { name, email, address } = values;
 
   return (
-    <form onSubmit={handleFormSubmit} className="step-1">
-      <h1>Subscribe Us</h1>
-
+    <form onSubmit={handleFormSubmit} className="step-1" id="homageForm">
+      <h1>Pay Homage</h1>
       <input
         value={name}
         onChange={handleInputChange}
@@ -37,7 +36,6 @@ const InitialStepForm = ({
         label="address"
         placeholder="Address (Optional)"
       />
-
       <div className="btn-group">
         <button className="upload-btn" onClick={nextStep}>
           Upload Image
