@@ -1,31 +1,7 @@
-import React, {useState, useEffect} from 'react';
-
-// Constants we need to make the API call 
-const CONTENT_MANAGEMENT_API_KEY = ""
-const SPACE_ID = ""
-const ENVIORNMENT_ID = ""
-const CONTENT_TYPE_ID = ""
-
-// TODO: TO create Client
-
-// const client = contentful.createClient({
-//   accessToken: '<content_management_api_key>'
-// })
+import React, { useState, useEffect } from 'react';
+import { createClient } from 'contentful-management';
 
 
-// TODO: TO create a new Entry //
-
-// client.getSpace('<space_id>')
-// .then((space) => space.getEnvironment('<environment_id>'))
-// .then((environment) => environment.createEntry('<content_type_id>', {
-//   fields: {
-//     title: {
-//       'en-US': 'Entry title'
-//     }
-//   }
-// }))
-// .then((entry) => console.log(entry))
-// .catch(console.error)
 
 // TODO: TO fetch all the entries
 
@@ -37,7 +13,33 @@ const CONTENT_TYPE_ID = ""
 
 const useform = () => {
 
-    const addEntryToContentful = ({name, phone, address, image}) => {
+    const addEntryToContentful = ({ name, phone, address, image }) => {
+        const CONTENT_MANAGEMENT_API_KEY = ""
+        const SPACE_ID = ""
+        const ENVIORNMENT_ID = ""
+        const CONTENT_TYPE_ID = ""
+
+        let client = createClient({
+            accessToken: CONTENT_MANAGEMENT_API_KEY
+        });
+        
+        client.getSpace(SPACE_ID)
+            .then((space) => space.getEnvironment(ENVIORNMENT_ID))
+            .then((environment) => environment.createEntry(CONTENT_TYPE_ID, {
+                fields: {
+                    name: {
+                        'en-US': name
+                    }
+                },
+                address: {
+                    "en-US": address
+                },
+                phone: {
+                    "en-US": phone
+                }
+            }))
+            .then((entry) => entry)
+            .catch(err => err)
     }
 
     return {
