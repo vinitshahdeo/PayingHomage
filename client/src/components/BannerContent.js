@@ -65,11 +65,12 @@ export default function BannerContent({ trees }) {
         <CounterUnderline src={counterUnderline} />
       </CounterWrapper>
       <BannerText>
-        This website shows the current amount of trees planted by Arborday based
-        on the projects listed on the Arborday project page*
+        This website is dedicated to Veteran Actor "Chinna Kalaivanar" Vivek sir
+        to show the current number of trees planted as a part of the one crore
+        trees plantation drive.*
       </BannerText>
       <div className="mt-2 mb-5">
-        <Link link="https://teamtrees.org/">Donate to teamtrees</Link>
+        <Link link="#homageForm">Pay Homage</Link>
       </div>
     </BannerContainer>
   );

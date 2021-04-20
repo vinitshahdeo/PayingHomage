@@ -17,12 +17,12 @@ const LinkButton = styled.a`
   }
 `;
 
-export default function Link({ children, link }) {
+export default function Link({ children, link, target }) {
   return (
     <LinkButton
       className="btn btn-primary btn-lg letter-spacing"
       href={link}
-      target="_blank"
+      target={target}
     >
       {children}
     </LinkButton>
