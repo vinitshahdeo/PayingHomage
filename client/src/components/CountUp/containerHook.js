@@ -9,7 +9,6 @@ const DELAY = 35;
 export default function useCountUpAnimation(animation = false, val = 0, deci) {
   const [count, setCount] = useState(0);
   const countRef = useRef(count);
-  let timeout;
 
   /**
    * Set timeout for counter animation.
@@ -36,19 +35,21 @@ export default function useCountUpAnimation(animation = false, val = 0, deci) {
     setCount(c);
 
     if (countRef.current < val) {
-      timeout = setTimeout(setTimeoutCounter, DELAY);
+      setTimeout(setTimeoutCounter, DELAY);
     }
   };
 
   useEffect(() => {
     if (val > 0 && animation) {
-      timeout = setTimeout(setTimeoutCounter, DELAY);
+      setTimeout(setTimeoutCounter, DELAY);
     } else {
       setCount(val);
     }
+    // Known stuff - no need of exhaustive dependendency array.
+    // eslint-disable-next-line
   }, [animation, val]);
 
   return {
-    count,
+    count
   };
 }
