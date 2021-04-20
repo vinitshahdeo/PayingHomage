@@ -13,7 +13,7 @@ import { createClient } from 'contentful-management';
 
 const useform = () => {
 
-    const addEntryToContentful = ({ name, phone, address, image }) => {
+    const addEntryToContentful = async ({ name, phone, address, image }) => {
         const CONTENT_MANAGEMENT_API_KEY = ""
         const SPACE_ID = ""
         const ENVIORNMENT_ID = ""
@@ -23,23 +23,52 @@ const useform = () => {
             accessToken: CONTENT_MANAGEMENT_API_KEY
         });
         
-        client.getSpace(SPACE_ID)
-            .then((space) => space.getEnvironment(ENVIORNMENT_ID))
-            .then((environment) => environment.createEntry(CONTENT_TYPE_ID, {
+        try {
+            let space = await client.getSpace(SPACE_ID);
+            let environment = await space.getEnvironment(ENVIORNMENT_ID)
+            let entry = await environment.createEntry(CONTENT_TYPE_ID, {
                 fields: {
                     name: {
-                        'en-US': name
+                        "en-US": name
+                    },
+                    address: {
+                        "en-US": address
+                    },
+                    phone: {
+                        "en-Us": phone
                     }
-                },
-                address: {
-                    "en-US": address
-                },
-                phone: {
-                    "en-US": phone
                 }
-            }))
-            .then((entry) => entry)
-            .catch(err => err)
+            });
+
+            // create a new asset
+
+            let asset = await environment.createAssetWithId("some random id", {
+                fields: {
+                    file: {
+                        "en-US": {
+                            contentType: 'image/jpeg',
+                            fileName: image.fileName,
+                            upload: image.file
+                        }
+                    }
+                }
+            })
+
+            // updating the entry 
+
+            entry.fields["image"]["en-US"] = {
+                "sys": {
+                    "id": asset.sys.id,
+                    "linkType": "Asset",
+                    "type": "Link"
+                }
+            }
+
+            return entry.update();
+            
+        } catch (error) {
+            throw error
+        }
     }
 
     return {
