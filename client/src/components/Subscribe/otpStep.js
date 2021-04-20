@@ -139,8 +139,7 @@ const OTPStepForm = ({ handleInputChange, phone, otp }) => {
           )}
           <input
             onChange={(event) => handleChangeImage(event)}
-            id="imageFile"
-            className="custom-file-input"
+            id="custom-image-upload"
             type="file"
           />
           <div style={{ display: "flex" }}>
