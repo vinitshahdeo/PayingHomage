@@ -12,6 +12,7 @@ import trees from "./assets/trees.json";
 import { sortByAttribute } from "./sort";
 
 import background from "./assets/footer-hills-trees.svg";
+import SubscribeForm from "./components/Subscribe/subscribeForm";
 
 const ProjectsContainer = styled.div`
   transform: translatey(-45px);
@@ -65,6 +66,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      <SubscribeForm />
     </PageContainer>
   );
 }
