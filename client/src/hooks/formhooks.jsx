@@ -36,22 +36,11 @@ const CONTENT_TYPE_ID = ""
 // .catch(console.error)
 
 const useform = () => {
-    //TODO: name, phone, address, image
-    let [name, setName] = useState("")
-    let [phone, setPhone] = useState("")
-    let [address, setAddress] = useState("")
-    let [image, setImage] = useState("")
 
+    const addEntryToContentful = ({name, phone, address, image}) => {
+    }
 
     return {
-        name: [name, e => {
-            setName(e.target.value)
-        }],
-        phone: [phone, e => {
-            setPhone(e.target.value)
-        }],
-        address: [address, e => {
-            setAddress(e.target.value)
-        }]
+        addEntryToContentful
     }
 }
