@@ -14,6 +14,8 @@ const initialValues = {
 
 const SubscribeForm = () => {
   const [values, setValues] = useState(initialValues);
+  const [loading, setLoading] = useState(false);
+  const [done, setDone] = useState(false);
 
   const [initialStep, setInitialStep] = useState(true);
 
@@ -34,17 +36,32 @@ const SubscribeForm = () => {
   };
 
   const handleFormSubmit = async () => {
+    setLoading(true);
     // submit data without image
     // when user just want to submit data and not upload image
     const { name, email, address } = values;
     try {
       let entry = await uploadWithoutImage(name, email, address);
-      console.log("contentful-successful",entry)
-      alert("Thank you for submiting");
+      console.log("contentful-successful", entry)
+      setLoading(false);
+      setDone(true);
     } catch (error) {
+      setLoading(false)
       alert(error)
     }
   };
+
+  if (loading) {
+    return <div className="subscribe-form">
+      <h3>Sumbmiting your response... </h3>
+    </div>
+  }
+
+  if (done) {
+    return <div className="subscribe-form">
+      <h3>Thank you</h3>
+    </div>
+  }
 
   return (
     <div className="subscribe-form">
