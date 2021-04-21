@@ -74,7 +74,8 @@ export const useConentful = () => {
                 }
             }
 
-            return entry.update()
+            await entry.update()
+            return entry;
         } catch (error) {
             throw error
         }
