@@ -16,7 +16,7 @@ import SubscribeForm from "./components/Subscribe/subscribeForm";
 import Footer from "./components/Footer/Footer";
 
 const ProjectsContainer = styled.div`
-  transform: translatey(-45px);
+  /* transform: translatey(-45px); */
 `;
 
 const PageContainer = styled.div`

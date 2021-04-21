@@ -5,27 +5,32 @@ import divider from "../assets/divider-right-condensed.svg";
 
 const Divider = styled.div`
   position: relative;
-  background-color: #89b636;
-  margin-top: -4px;
-  padding: 0 0 2rem;
-  background-image: url(${treeBackground});
+  background-color: #287775;
+  /* padding: 0 0 2rem; */
+  /* background-image: url(${treeBackground});
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100%;
-  height: 17.5vh;
+  background-size: 100%; */
+  /* height: 17.5vh; */
 `;
 
-const DividerImage = styled.img`
+// const DividerImage = styled.img`
+//   width: 100%;
+//   position: absolute;
+//   bottom: -1px;
+//   left: 0;
+// `;
+
+const DividerLine = styled.div`
+  height: 10px;
   width: 100%;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
+  background-color: #287775;
 `;
 
 export default function BannerGreen() {
   return (
     <Divider>
-      <DividerImage src={divider} />
+      <DividerLine></DividerLine>
     </Divider>
   );
 }
