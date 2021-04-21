@@ -10,8 +10,8 @@ const InitialStepForm = ({
   const { name, email, address } = values;
 
   return (
-    <form onSubmit={handleFormSubmit} className="step-1" id="homageForm">
-      <h1>Pay Homage</h1>
+    <div  className="step-1">
+      <h1>Subscribe Us</h1>
       <input
         value={name}
         onChange={handleInputChange}
@@ -40,11 +40,11 @@ const InitialStepForm = ({
         <button className="upload-btn" onClick={nextStep}>
           Upload Image
         </button>
-        <button className="submit-btn" type="submit">
+        <button className="submit-btn" onClick={handleFormSubmit}>
           Submit
         </button>
       </div>
-    </form>
+    </div>
   );
 };
 
