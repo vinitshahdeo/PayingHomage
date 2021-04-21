@@ -60,6 +60,7 @@ const SubscribeForm = () => {
           handleInputChange={handleInputChange}
           phone={phone}
           otp={otp}
+          values={values}
         />
       )}
     </div>

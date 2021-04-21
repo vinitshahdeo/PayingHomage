@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { firebase } from "./../../api/firebase";
 import "./../../styles/subscribe.css";
+import { useConentful } from './contentful'
 
-const OTPStepForm = ({ handleInputChange, phone, otp }) => {
+const OTPStepForm = ({ handleInputChange, phone, otp, values }) => {
   const [loading, setloading] = useState(false);
   const [complete, setComplete] = useState(false);
   const [captchaSolved, setCaptchaSolved] = useState(false);
   const [confirmationResult, setConfirmationResult] = useState();
   const [imageFile, setImageFile] = useState();
+
+  const { uploadContentWithImage } = useConentful();
 
   // initial recaptcha setup
   const setupRecaptcha = () => {
@@ -85,6 +88,16 @@ const OTPStepForm = ({ handleInputChange, phone, otp }) => {
     //
     // TODO: Submit form with uploaded Image. All info is stored in state
     //
+
+    try {
+      const { name, email, address } = values;
+      let res = await uploadContentWithImage(name, email, address, imageFile)
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+      throw error
+    }
+
   };
 
   const handleChangeImage = (event) => {
