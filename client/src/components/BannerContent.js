@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Link from "./Link";
 import CountUp from "./CountUp";
 
-import logo from "../assets/logo.svg";
 import counterStar from "../assets/counter-starburst-light.svg";
 import counterUnderline from "../assets/counter-underline.svg";
 
@@ -11,20 +10,9 @@ const BannerContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: radial-gradient(
-    ellipse,
-    rgba(20, 30, 50, 0.3) 0,
-    rgba(20, 30, 50, 0) 75%
-  );
   height: 100%;
   align-items: center;
   justify-content: center;
-`;
-
-const Logo = styled.img`
-  max-width: 30rem;
-  width: 100%;
-  margin: 0 auto 1rem;
 `;
 
 const CounterWrapper = styled.div`
@@ -38,9 +26,10 @@ const CounterWrapper = styled.div`
 const SubTitle = styled.p`
   letter-spacing: 2px;
   text-transform: uppercase !important;
-  color: white;
+  color: black;
   font-size: 1.5rem;
   margin-bottom: 0;
+  margin-top: 2rem;
 `;
 
 const CounterUnderline = styled.img`
@@ -51,14 +40,14 @@ const CounterUnderline = styled.img`
 `;
 
 const BannerText = styled.p`
-  font-size: 1.25rem;
-  color: white;
+  font-size: 1.15rem;
+  color: #6f6f6f;
+  margin-bottom: 2rem;
 `;
 
 export default function BannerContent({ trees }) {
   return (
     <BannerContainer>
-      <Logo src={logo} />
       <CounterWrapper>
         <CountUp value={trees} />
         <SubTitle>trees planted</SubTitle>
@@ -69,9 +58,9 @@ export default function BannerContent({ trees }) {
         to show the current number of trees planted as a part of the one crore
         trees plantation drive.*
       </BannerText>
-      <div className="mt-2 mb-5">
+      {/* <div className="mt-2 mb-5">
         <Link link="#homageForm">Pay Homage</Link>
-      </div>
+      </div> */}
     </BannerContainer>
   );
 }
