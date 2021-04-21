@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import treeBackground from "../assets/tree-background-full.png";
-import divider from "../assets/divider-right-condensed.svg";
 
 const Divider = styled.div`
   position: relative;
