@@ -13,9 +13,12 @@ import { sortByAttribute } from "./sort";
 
 import background from "./assets/footer-hills-trees.svg";
 import SubscribeForm from "./components/Subscribe/subscribeForm";
+import Footer from "./components/Footer/Footer";
+import AboutVivek from "./components/AboutVivek/AboutVivek";
 
 const ProjectsContainer = styled.div`
-  transform: translatey(-45px);
+  /* why?
+  transform: translatey(-45px); */
 `;
 
 const PageContainer = styled.div`
@@ -49,6 +52,7 @@ function App() {
       <Banner />
       <BannerDivider />
       <Container>
+        <AboutVivek />
         <Row>
           <Col lg={11}>
             <ProjectsContainer>
@@ -67,6 +71,7 @@ function App() {
         </Row>
       </Container>
       <SubscribeForm />
+      <Footer />
     </PageContainer>
   );
 }
