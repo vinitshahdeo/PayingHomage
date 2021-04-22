@@ -11,7 +11,8 @@ const InitialStepForm = ({
 
   return (
     <div  className="step-1">
-      <h1>Subscribe Us</h1>
+      <h1>Pay Homage</h1>
+      <p>All you have to do is, plant a tree, take a picture and upload it here.</p>
       <input
         value={name}
         onChange={handleInputChange}
