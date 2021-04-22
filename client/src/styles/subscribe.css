@@ -5,6 +5,8 @@
   background-color: white;
   border-radius: 8px;
   text-align: center;
+  color: #113259;
+  font-family: "Poppins", sans-serif;
 }
 
 .subscribe-form h1 {
@@ -23,7 +25,7 @@ textarea {
   padding: 0.8rem;
   border-radius: 8px;
   outline: none;
-  border: 1px solid black;
+  border: 1px solid #113259;
 }
 
 .subscribe-form input::placeholder,
@@ -46,7 +48,7 @@ textarea::placeholder {
 .submit-btn,
 .otp-btn,
 .verify-btn {
-  background-color: black;
+  background-color: #113259;
   width: 100%;
   color: white;
   font-weight: 600;
@@ -94,7 +96,7 @@ textarea::placeholder {
 .img-container {
   display: flex;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 2px solid #113259;
   border-radius: 8px;
   padding: 8px;
 }
@@ -123,7 +125,7 @@ textarea::placeholder {
   font-size: 10pt;
 }
 #custom-image-upload:hover::before {
-  border-color: black;
+  border-color: #113259;
 }
 #custom-image-upload:active::before {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);

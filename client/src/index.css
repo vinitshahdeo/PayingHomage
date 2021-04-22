@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif !important;
+  font-family: 'Montserrat Alternates', sans-serif !important;
+}
+
+.headings {
+  font-family: 'Poppins', sans-serif !important;
+  color: #113259;
+  margin: 10px;
 }
 
 a {
@@ -19,4 +26,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.about__vivek {
+  text-align: justify;
+  margin: 10px;
+  color: #6f6f6f;
 }

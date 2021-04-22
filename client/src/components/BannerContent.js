@@ -26,8 +26,9 @@ const CounterWrapper = styled.div`
 const SubTitle = styled.p`
   letter-spacing: 2px;
   text-transform: uppercase !important;
-  color: black;
+  color: #113259;
   font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 0;
   margin-top: 2rem;
 `;
@@ -50,7 +51,7 @@ export default function BannerContent({ trees }) {
     <BannerContainer>
       <CounterWrapper>
         <CountUp value={trees} />
-        <SubTitle>trees planted</SubTitle>
+        <SubTitle className='headings'>trees planted</SubTitle>
         <CounterUnderline src={counterUnderline} />
       </CounterWrapper>
       <BannerText>
