@@ -82,7 +82,9 @@ export default function Banner() {
         </BannerRow>
       </BannerCon>
       {/* <SpaceShip /> */}
-      <HomageButton>Pay Homage</HomageButton>
+      <a href="https://forms.gle/FXkt8LftB2YJBxzv5">
+        <HomageButton>Pay Homage</HomageButton>
+      </a>
       <Astronaut />
       <Plantation />
       <Logo src={logo} />

@@ -12,38 +12,13 @@ const InitialStepForm = ({
   return (
     <div  className="step-1">
       <h1>Pay Homage</h1>
-      <p>All you have to do is, plant a tree, take a picture and upload it here.</p>
-      <input
-        value={name}
-        onChange={handleInputChange}
-        name="name"
-        type="text"
-        label="name"
-        placeholder="Name"
-      />
-      <input
-        value={email}
-        onChange={handleInputChange}
-        name="email"
-        type="email"
-        label="email"
-        placeholder="Email"
-      />
-      <textarea
-        value={address}
-        onChange={handleInputChange}
-        name="address"
-        type="text"
-        label="address"
-        placeholder="Address (Optional)"
-      />
+      <p className="about__vivek-form">Let's join our hands to Actor Padma Shri Vivek's Trees Initiative.
+        All you have to do is, plant a tree, take a picture and upload it here.</p>
       <div className="btn-group">
-        <button className="upload-btn" onClick={nextStep}>
-          Upload Image
+        <a href="https://forms.gle/FXkt8LftB2YJBxzv5"><button className="submit-btn">
+          Submit your details
         </button>
-        <button className="submit-btn" onClick={handleFormSubmit}>
-          Submit
-        </button>
+        </a>
       </div>
     </div>
   );
