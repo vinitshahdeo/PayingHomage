@@ -57,9 +57,9 @@ export const useConentful = () => {
                 fields: {
                     file: {
                         "en-US": {
-                            contentType: image.contentType,
-                            fileName: image.fileName,
-                            upload: image.fileContent
+                            contentType: 'image/jpg',
+                            fileName: "tress",
+                            upload: image
                         }
                     }
                 }
@@ -74,7 +74,8 @@ export const useConentful = () => {
                 }
             }
 
-            return entry.update()
+            await entry.update()
+            return entry;
         } catch (error) {
             throw error
         }
