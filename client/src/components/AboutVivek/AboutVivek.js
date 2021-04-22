@@ -9,7 +9,7 @@ const VivImg = styled.img`
   margin: 75px 0;
   border-radius: 75px;
   @media (max-width: 768px) {
-    margin: 0;
+    margin: 16px 0;
   }
 `;
 const VivAbout = styled.div`
@@ -18,7 +18,7 @@ const VivAbout = styled.div`
   flex-direction: column;
   padding: 75px 0;
   @media (max-width: 768px) {
-    padding: 0;
+    padding: 16px 0;
   }
 `;
 
