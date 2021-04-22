@@ -10,7 +10,7 @@ const InitialStepForm = ({
   const { name, email, address } = values;
 
   return (
-    <div  className="step-1">
+      <div>
       <h1>Pay Homage</h1>
       <p className="about__vivek-form">Let's join our hands to Actor Padma Shri Vivek's Trees Initiative.
         All you have to do is, plant a tree, take a picture and upload it here.</p>
@@ -20,7 +20,7 @@ const InitialStepForm = ({
         </button>
         </a>
       </div>
-    </div>
+      </div>
   );
 };
 

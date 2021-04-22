@@ -53,24 +53,8 @@ function App() {
       <BannerDivider />
       <Container>
         <AboutVivek />
-        {/* <Row>
-          <Col lg={11}>
-             <ProjectsContainer>
-              {Object.entries(items).map(([key, value], i) => (
-                <Projects title={key} items={value} key={i} />
-              ))}
-             </ProjectsContainer>
-          </Col>
-          <Col lg={1}>
-            <IndexContainer>
-               {Object.keys(items).map((value, i) => (
-                 <Index key={i}>{value}</Index>
-               ))}
-            </IndexContainer>
-          </Col>
-        </Row> */}
+        <SubscribeForm />
       </Container>
-      <SubscribeForm />
       <Footer />
     </PageContainer>
   );

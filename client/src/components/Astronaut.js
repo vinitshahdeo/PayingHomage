@@ -12,5 +12,5 @@ const AstronautImage = styled.img`
 `;
 
 export default function Astronaut() {
-    return <AstronautImage src={astronaut} />
+    return <AstronautImage className="hideInPhone" src={astronaut} />
 }

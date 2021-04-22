@@ -108,6 +108,14 @@ textarea::placeholder {
   visibility: hidden;
 }
 
+@media screen and (max-width: 480px) {
+
+  .subscribe-form {
+    width: auto;
+  }
+
+}
+
 #custom-image-upload::before {
   content: "Browse File";
   display: inline-block;
