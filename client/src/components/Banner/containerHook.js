@@ -1,16 +1,26 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import trees from '../../assets/trees.json';
-import {GoogleSpreadsheet} from 'google-spreadsheet'
+import { GoogleSpreadsheet } from 'google-spreadsheet'
 
 export default function useBanner() {
 
     const fetchTrees = async () => {
-        const doc = new GoogleSpreadsheet(process.env.REACT_APP_GOOGLE_SHEET_ID);
-        
+        try {
+            const doc = new GoogleSpreadsheet(process.env.REACT_APP_GOOGLE_SHEET_ID);
+            await doc.useServiceAccountAuth({
+                client_email: process.env.REACT_APP_GOOGLE_SERVICE_ACCOUNT_EMAIL,
+                private_key: process.env.REACT_APP_GOOGLE_PRIVATE_KEY
+            });
+            await doc.loadInfo()
+            const sheet = doc.sheetsByIndex[0];
+            return sheet.rowCount;
+        } catch (error) {
+            throw error
+        }
     }
 
     useEffect(() => {
-        
+
     })
 
     function getTrees() {
@@ -22,5 +32,6 @@ export default function useBanner() {
 
     return {
         getTrees,
+        fetchTrees
     }
 }
