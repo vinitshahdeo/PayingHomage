@@ -22,6 +22,8 @@ Optionally you can use `yarn` too.
 - [@anup-a](https://github.com/anup-a)
 - [@Souvikns](https://github.com/Souvikns)
 
+> Feel free to raise PRs for any open issues.
+
 ## Disclaimer
 
 Please keep in mind that **this is not an official website** and has nothing to do with Vivek Sir's initiative. Please contact vinitshahdeo[at]gmail[dot]com if you have any questions or issues.
