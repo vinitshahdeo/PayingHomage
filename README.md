@@ -1,6 +1,6 @@
 # Paying homage to Vivek Sir
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/13d47086-85cd-48d1-972b-b50863fd5819/deploy-status)](https://app.netlify.com/sites/youthful-mcnulty-e16c79/deploys) [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PayingHomage?logo=github)](https://github.com/vinitshahdeo/PayingHomage/blob/main/LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/13d47086-85cd-48d1-972b-b50863fd5819/deploy-status)](https://app.netlify.com/sites/youthful-mcnulty-e16c79/deploys) [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PayingHomage?logo=github)](https://github.com/vinitshahdeo/PayingHomage/blob/main/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/vinitshahdeo/PayingHomage?logo=github)](https://github.com/vinitshahdeo/PayingHomage/issues)
 
 > This website is dedicated to Veteran Actor "Chinna Kalaivanar" Vivek sir to show the current number of trees planted as a part of the one crore trees plantation drive.
 
