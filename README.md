@@ -25,6 +25,12 @@ Optionally you can use `yarn` too.
 
 > Feel free to raise PRs for any open issues.
 
+## About Vivek Sir
+
+- Vivekanandan (19 November 1961 – 17 April 2021), known professionally as Vivek, was an Indian film actor, comedian, television personality, playback singer and social activist working in the Tamil film industry. 
+- In 2010, Vivek launched [Green Kalam](https://greenkalam.org/), a project to plant trees across India inspired by former President of India A. P. J. Abdul Kalam. Through Twitter, he mobilized volunteers, particularly from schools and colleges, to join the initiative. Kalam insisted the project should not be named after him, after which Vivek briefly changed its name to Green Globe. As of his death, over 3,300,000 saplings had been planted.
+- Learn more [here](https://en.wikipedia.org/wiki/Vivek_(actor)).
+
 ## Disclaimer
 
 Please keep in mind that **this is not an official website** and has nothing to do with Vivek Sir's initiative. Please contact vinitshahdeo[at]gmail[dot]com if you have any questions or issues.
