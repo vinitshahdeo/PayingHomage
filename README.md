@@ -8,7 +8,7 @@
 
 ## Development
 
-```js
+```bash
 cd client
 npm install
 npm start
