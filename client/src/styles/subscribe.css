@@ -6,7 +6,7 @@
   border-radius: 8px;
   text-align: center;
   color: #113259;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .subscribe-form h1 {
@@ -106,6 +106,14 @@ textarea::placeholder {
 
 #custom-image-upload::-webkit-file-upload-button {
   visibility: hidden;
+}
+
+@media screen and (max-width: 480px) {
+
+  .subscribe-form {
+    width: auto;
+  }
+
 }
 
 #custom-image-upload::before {

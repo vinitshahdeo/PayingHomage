@@ -9,7 +9,7 @@ const VivImg = styled.img`
   margin: 75px 0;
   border-radius: 75px;
   @media (max-width: 768px) {
-    margin: 0;
+    margin: 16px 0;
   }
 `;
 const VivAbout = styled.div`
@@ -18,7 +18,7 @@ const VivAbout = styled.div`
   flex-direction: column;
   padding: 75px 0;
   @media (max-width: 768px) {
-    padding: 0;
+    padding: 16px 0;
   }
 `;
 
@@ -31,23 +31,20 @@ const AboutVivek = () => {
       <Col md={6} className="d-flex align-items-stretch">
         <VivAbout className="d-flex justify-content-center">
           <div className="text">
-            <h2 className='headings'>About Dr. Vivekh</h2>
+            <h2 className='headings'><span>RIP Sir Vivek</span></h2>
             <p className='about__vivek'>
-              Vivekanandan, better known as Vivekh, Indian film actor, comedian,
+              Vivekanandan, better known as Vivek, Indian film actor, comedian,
               Television personality, playback singer and versatile social
-              activist working for the Tamil film industry.
-              Introduced in films by the legendary Director late. Shri. K. Bala
-              Chander.
-              In 2009, Government of India awarded with the prestigious Padma
+              activist working for the Tamil film industry is no more with us.
+              He was introduced in films by the legendary Director late. Shri. K. Bala
+              Chander. In 2009, Government of India awarded with the prestigious Padma
               Shri award for his contribution to the arts, and Sathyabama
               University, has conferred, Vivek with an honorary doctorate for
               his contribution to the society through cinema.
             </p>
-            <h2 className='headings'>His Vision</h2>
+            <h2 className='headings'><span>Paying tribute</span></h2>
             <p className='about__vivek'>
-              This mission is fast reaching and as of now 30.23 lakhs plantings were completed, and Actor vivekh has focused to complete this task through Sai Prasanna Foundation.
-              In the year 2010, launch GREEN KALAM PROJECT under guidance of Former President of India Late Dr .A.P.J Abdul Kalam with the mission of planting 1 crore  trees and ventured into a mass campaign on global warming which is aimed at saving planets.
-              Had been travelling within the state visiting various educational institution and a planted 29.03 Lakhs saplings as on December 31 2017  with the support of school and college children and  cooperation from the public.
+            We are thinking in similar lines as many of Actor Vivek's fans. We would like to document the trees planting efforts by the fans so that we will keep a counter to confirm that we reached 1,00,00,000 plus trees planted in memory of Actor Padma Shri Vivek's initiative to plant trees as advised by his Guru Dr. Abdul Kalam few years back. We are trying to carry the mantle that Vivek Sir had left with us. Do help us in carrying the mantle forward through planting of Trees! 
             </p>
           </div>
         </VivAbout>

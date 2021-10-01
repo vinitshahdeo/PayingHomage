@@ -82,8 +82,10 @@ export default function Banner() {
         </BannerRow>
       </BannerCon>
       {/* <SpaceShip /> */}
-      <HomageButton>Pay Homage</HomageButton>
-      <Astronaut />
+      <a href="https://forms.gle/FXkt8LftB2YJBxzv5">
+        <HomageButton className='hideInPhone'>Pay Homage</HomageButton>
+      </a>
+      <Astronaut className='hideInPhone'/>
       <Plantation />
       <Logo src={logo} />
       {/* <Cloud1 /> */}

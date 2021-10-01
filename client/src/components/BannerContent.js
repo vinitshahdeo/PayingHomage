@@ -55,9 +55,7 @@ export default function BannerContent({ trees }) {
         <CounterUnderline src={counterUnderline} />
       </CounterWrapper>
       <BannerText>
-        This website is dedicated to Veteran Actor "Chinna Kalaivanar" Vivek sir
-        to show the current number of trees planted as a part of the one crore
-        trees plantation drive.*
+      We are trying to carry the mantle that Vivek Sir had left with us. Do help us in carrying the mantle forward through planting of Trees! 
       </BannerText>
       {/* <div className="mt-2 mb-5">
         <Link link="#homageForm">Pay Homage</Link>

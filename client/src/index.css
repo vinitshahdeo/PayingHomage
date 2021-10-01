@@ -14,6 +14,10 @@ body {
   margin: 10px;
 }
 
+span {
+  font-weight: bold;
+}
+
 a {
   text-decoration: none !important;
 }
@@ -32,4 +36,17 @@ code {
   text-align: justify;
   margin: 10px;
   color: #6f6f6f;
+}
+
+.about__vivek-form {
+  margin: 10px;
+  color: #6f6f6f;
+}
+
+@media screen and (max-width: 480px) {
+
+  .hideInPhone {
+    display: none;
+  }
+
 }
